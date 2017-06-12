@@ -11,7 +11,7 @@ class Draggable extends Component {
   }
   
   toggleDrag(dragged) {
-    this.setState({...this.state, dragged});
+    this.setState({ dragged });
   }
   
   performDrag(event) {
@@ -20,7 +20,7 @@ class Draggable extends Component {
     }
     const offsetX = this.props.width / 2;
     const offsetY = this.props.height / 2;
-    this.setState({...this.state, left: event.pageX - offsetX, top: event.pageY - offsetY});
+    this.setState({ left: event.pageX - offsetX, top: event.pageY - offsetY });
   }
   
   render() {    
